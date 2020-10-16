@@ -6,7 +6,7 @@ def initialize(filepath)
 end
 
 def files
-  @files = Dir.entries(@path)
+  @files = Dir.entries.uniq(@path)
 end
 
 end
