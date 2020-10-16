@@ -20,8 +20,8 @@ attr_accessor :name, :songs
     self.all.detect { |artist| artist.name == name} || Artist.new(name)
   end
 
-  def self.print_songs
-    @@all.map { |songs| puts songs.name }
+  def print_songs
+    @song.map { |song| puts song.name }
   end
 
 end
