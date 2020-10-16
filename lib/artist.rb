@@ -3,11 +3,11 @@ attr_accessor :name
 @@all = []
   def initialize (name)
     @name = name
-    @@all << self 
+    @@all << self
   end
 
   def all
-    @all
+    @@all
   end
 
   def add_song(song)
