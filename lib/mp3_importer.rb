@@ -10,4 +10,8 @@ def files
   @files.delete_if { |file| file == "." || file == ".." }
 end
 
+def import
+  
+end
+
 end
