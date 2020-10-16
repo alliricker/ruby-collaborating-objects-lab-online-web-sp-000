@@ -12,9 +12,10 @@ def self.all
 end
 
 def self.new_by_filename(filename)
-  binding.pry
   splitname = filename.split(" - ")
-  self.new(split.name[1])
+  song = self.new(split.name[1])
+  artist = Artist.find_or_create_by_name(split.name[1])
+  song.artist = artist
 end
 
 end
