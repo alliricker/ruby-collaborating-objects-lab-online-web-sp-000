@@ -14,6 +14,7 @@ end
 def self.new_by_filename(filename)
   binding.pry
   splitname = filename.split(" - ")
+  self.new(split.name[1])
 end
 
 end
