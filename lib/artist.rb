@@ -21,7 +21,7 @@ attr_accessor :name, :songs
   end
 
   def print_songs
-    @@all.map { |songs| puts song.name }
+    @@all.map { |songs| puts songs.name }
   end
 
 end
