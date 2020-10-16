@@ -12,6 +12,7 @@ end
 
 def import
   self.files.each { |file| Song.new_by_filename(file) }
+  Artist.all << song.artist unless Artist.all.include?(song.artist)
 end
 
 end
