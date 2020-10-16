@@ -8,7 +8,7 @@ def initialize(name)
   @name = name
 end
 
-def save 
+def save
   @@all << self
 
 def self.all
