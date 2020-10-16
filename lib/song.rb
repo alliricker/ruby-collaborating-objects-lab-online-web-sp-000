@@ -22,8 +22,8 @@ def self.new_by_filename(filename)
   song
 end
 
-def artist_name=(name)
-  artist = Song.new
+def artist=(name)
+  artist = Artist.find_or_create_by_name(split_name[2])
 end
 
 end
