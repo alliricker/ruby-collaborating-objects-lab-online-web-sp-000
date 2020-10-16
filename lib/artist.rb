@@ -10,4 +10,14 @@ attr_accessor :name
     @@all
   end
 
+  def add_song
+    song = Artist.new
+    @@all << song
+  end
+
+
+
+    
+
+
 end
