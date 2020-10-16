@@ -6,4 +6,5 @@ def initialize(filepath)
 end
 
 def files
+  @files = DIR.entries(@path)
 end
